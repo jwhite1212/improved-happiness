@@ -1,6 +1,6 @@
 view: dq_rule {
   label: "Rules"
-  sql_table_name: "CLARITY_DQ_SCORECARD"."DQ_RULE"
+  sql_table_name: "CLARITY_DQ_SCORECARD"."VW_RPTS_DQ_RULE"
     ;;
   drill_fields: []
 

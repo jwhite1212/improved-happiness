@@ -1,6 +1,6 @@
 view: target_attrib_result {
   label: "Attribute Results"
-  sql_table_name: "CLARITY_DQ_SCORECARD"."TARGET_ATTRIB_RESULT"
+  sql_table_name: "CLARITY_DQ_SCORECARD"."VW_RPTS_TARGET_ATTRIB_RESULT"
     ;;
 
   dimension: attrib_test_key {

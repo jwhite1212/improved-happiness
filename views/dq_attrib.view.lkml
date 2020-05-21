@@ -1,6 +1,6 @@
 view: dq_attrib {
   label: "Attributes"
-  sql_table_name: "CLARITY_DQ_SCORECARD"."DQ_ATTRIB"
+  sql_table_name: "CLARITY_DQ_SCORECARD"."VW_RPTS_DQ_ATTRIB"
     ;;
 
   dimension: active_ind {

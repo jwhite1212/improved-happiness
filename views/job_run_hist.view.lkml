@@ -1,6 +1,6 @@
 view: job_run_hist {
   label: "Job Run History"
-  sql_table_name: "CLARITY_DQ_SCORECARD"."JOB_RUN_HIST"
+  sql_table_name: "CLARITY_DQ_SCORECARD"."VW_RPTS_JOB_RUN_HIST"
     ;;
 
   dimension: id {

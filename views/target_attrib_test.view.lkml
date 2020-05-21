@@ -1,6 +1,6 @@
 view: target_attrib_test {
   label: "Attribute Tests"
-  sql_table_name: "CLARITY_DQ_SCORECARD"."TARGET_ATTRIB_TEST"
+  sql_table_name: "CLARITY_DQ_SCORECARD"."VW_RPTS_TARGET_ATTRIB_TEST"
     ;;
 
   dimension: active_ind {

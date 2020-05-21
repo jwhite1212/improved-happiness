@@ -1,6 +1,6 @@
 view: target_attrib_error_log {
   label: "Attribute Error Log"
-  sql_table_name: "CLARITY_DQ_SCORECARD"."TARGET_ATTRIB_ERROR_LOG"
+  sql_table_name: "CLARITY_DQ_SCORECARD"."VW_RPTS_TARGET_ATTRIB_ERROR_LOG"
     ;;
 
   dimension: attrib_test_key {

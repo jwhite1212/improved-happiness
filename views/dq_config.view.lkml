@@ -1,6 +1,6 @@
 view: dq_config {
   label: "Configuration"
-  sql_table_name: "CLARITY_DQ_SCORECARD"."DQ_CONFIG"
+  sql_table_name: "CLARITY_DQ_SCORECARD"."VW_RPTS_DQ_CONFIG"
     ;;
 
   dimension: active_ind {

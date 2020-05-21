@@ -1,6 +1,6 @@
 view: dim_date {
   label: "Calendar"
-  sql_table_name: "CLARITY_DQ_SCORECARD"."DIM_DATE"
+  sql_table_name: "CLARITY_DQ_SCORECARD"."VW_RPTS_DIM_DATE"
     ;;
 
   dimension: date_key {

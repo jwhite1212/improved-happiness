@@ -33,10 +33,10 @@ view: target_attrib_test {
     sql: ${TABLE}."DQ_ATTRIB_KEY" ;;
   }
 
-  dimension: dq_generated_sql {
-    label: "Generated SQL"
+  dimension: dq_custom_sql {
+    label: "Custom SQL"
     type: string
-    sql: ${TABLE}."DQ_GENERATED_SQL" ;;
+    sql: ${TABLE}."DQ_CUSTOM_SQL" ;;
   }
 
   dimension: dq_rule_id {

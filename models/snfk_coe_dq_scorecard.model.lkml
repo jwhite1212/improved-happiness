@@ -14,7 +14,7 @@ persist_with: snfk_coe_dq_scorecard_datagroup
 explore: target_attrib_result {
   persist_with: snfk_coe_dq_scorecard_datagroup
   label: "1) Data Quality Test Results"
-  sql_always_where: ${target_attrib_test.active_ind} = 'Yes' ;;
+  # sql_always_where: ${target_attrib_test.active_ind} = 'Yes' ;;
 
   join: target_attrib_test {
     type: inner

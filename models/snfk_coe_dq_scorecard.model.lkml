@@ -23,6 +23,26 @@ explore: target_attrib_result {
     relationship: many_to_one
   }
 
+  join: dq_owner {
+    type: inner
+    sql_on: ${target_attrib_test.dq_owner_key} = ${dq_owner.owner_key} ;;
+    relationship: many_to_one
+  }
+
+  join: target_attrib_review_set {
+    type: inner
+    sql_on: ${target_attrib_test.attrib_test_key} = ${target_attrib_review_set.attribute_test_key} ;;
+    relationship: many_to_one
+  }
+
+
+  join: dq_review_set {
+    type: inner
+    sql_on: ${target_attrib_review_set.dq_review_set_key} = ${dq_review_set.review_set_key} ;;
+    relationship: many_to_one
+  }
+
+
   join: job_run_hist {
     type: inner
     sql_on: ${target_attrib_result.job_run_id} = ${job_run_hist.id} ;;

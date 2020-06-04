@@ -39,6 +39,13 @@ view: target_attrib_test {
     sql: ${TABLE}."DQ_CUSTOM_SQL" ;;
   }
 
+  dimension: dq_owner_key {
+    label: "Owner Key"
+    type: number
+    value_format_name: id
+    sql: ${TABLE}."DQ_OWNER_KEY" ;;
+  }
+
   dimension: dq_rule_id {
     type: string
     # hidden: yes

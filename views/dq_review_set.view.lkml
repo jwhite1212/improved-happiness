@@ -2,7 +2,7 @@ view: dq_review_set {
   sql_table_name: "CLARITY_DQ_SCORECARD"."VW_RPTS_DQ_REVIEW_SET"
     ;;
 
-  dimension_group: created_timestamp {
+  dimension_group: created {
     type: time
     timeframes: [
       raw,
@@ -16,7 +16,7 @@ view: dq_review_set {
     sql: ${TABLE}."Created Timestamp" ;;
   }
 
-  dimension_group: last_updated_timestamp {
+  dimension_group: last_updated {
     type: time
     timeframes: [
       raw,
@@ -31,11 +31,13 @@ view: dq_review_set {
   }
 
   dimension: last_updated_user_id {
+    label: "Last Updated User ID"
     type: string
     sql: ${TABLE}."Last Updated User ID" ;;
   }
 
   dimension: review_set_key {
+    primary_key: yes
     type: number
     sql: ${TABLE}."Review Set Key" ;;
   }

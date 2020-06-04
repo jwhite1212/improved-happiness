@@ -2,7 +2,7 @@ view: dq_owner {
   sql_table_name: "CLARITY_DQ_SCORECARD"."VW_RPTS_DQ_OWNER"
     ;;
 
-  dimension_group: created_timestamp {
+  dimension_group: created {
     type: time
     timeframes: [
       raw,
@@ -16,7 +16,7 @@ view: dq_owner {
     sql: ${TABLE}."Created Timestamp" ;;
   }
 
-  dimension_group: last_updated_timestamp {
+  dimension_group: last_updated {
     type: time
     timeframes: [
       raw,
@@ -31,11 +31,13 @@ view: dq_owner {
   }
 
   dimension: last_updated_user_id {
+    label: "Last Updated User ID"
     type: string
     sql: ${TABLE}."Last Updated User ID" ;;
   }
 
   dimension: owner_key {
+    primary_key: yes
     type: number
     sql: ${TABLE}."Owner Key" ;;
   }

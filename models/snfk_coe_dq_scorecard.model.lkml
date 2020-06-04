@@ -1,6 +1,7 @@
 connection: "snfk_coe_dq_scorecard"
 
 # include all the views
+include: "/dashboards/**/*.dashboard"
 include: "/views/**/*.view"
 
 datagroup: snfk_coe_dq_scorecard_datagroup {

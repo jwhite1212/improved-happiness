@@ -24,12 +24,14 @@ explore: target_attrib_result {
   }
 
   join: dq_owner {
+    view_label: "Owner"
     type: inner
     sql_on: ${target_attrib_test.dq_owner_key} = ${dq_owner.owner_key} ;;
     relationship: many_to_one
   }
 
   join: target_attrib_review_set {
+    view_label: "Attribute Review Set"
     type: inner
     sql_on: ${target_attrib_test.attrib_test_key} = ${target_attrib_review_set.attribute_test_key} ;;
     relationship: many_to_one
@@ -37,6 +39,7 @@ explore: target_attrib_result {
 
 
   join: dq_review_set {
+    view_label: "DQ Review Set"
     type: inner
     sql_on: ${target_attrib_review_set.dq_review_set_key} = ${dq_review_set.review_set_key} ;;
     relationship: many_to_one
